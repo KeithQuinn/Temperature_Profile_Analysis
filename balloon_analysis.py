@@ -1,4 +1,4 @@
-import pandas as pd # read CSV file
+import pandas as pd
 import matplotlib.pyplot as plt
 
 df = pd.read_excel("Data Master File from M.O.L.E.xlsx")
@@ -17,7 +17,7 @@ a2rb = df["A2RB"]
 a3rt = df["A3RT"]
 a3rb = df["A3RB"]
 
-#arm position and loose tray
+#modified settings (arm position and loose tray)
 a1lt2 = df["A1LT2"]
 a1lb2 = df["A1LB2"]
 a2lt2 = df["A2LT2"]
