@@ -20,75 +20,75 @@ a3rb = df["A3RB"]
 #Arm1
 mylist1 = []
 for i in a1lt:
-    if i >= 35:
+    if i >= 30:
         mylist1.append(i)
 a1lt = mylist1
 
 mylist2 = []
 for i in a1lb:
-    if i >= 35:
+    if i >= 30:
         mylist2.append(i)
 a1lb = mylist2
 
 mylist3 = []
 for i in a1rt:
-    if i >= 35:
+    if i >= 30:
         mylist3.append(i)
 a1rt = mylist3
 
 mylist4 = []
 for i in a1rb:
-    if i >= 35:
+    if i >= 30:
         mylist4.append(i)
 a1rb = mylist4
 
 #Arm2
 mylist5 = []
 for i in a2lt:
-    if i >= 35:
+    if i >= 30:
         mylist5.append(i)
 a2lt = mylist5
 
 mylist6 = []
 for i in a2lb:
-    if i >= 35:
+    if i >= 30:
         mylist6.append(i)
 a2lb = mylist6
 
 mylist7 = []
 for i in a2rt:
-    if i >= 35:
+    if i >= 30:
         mylist7.append(i)
 a2rt = mylist7
 
 mylist8 = []
 for i in a2rb:
-    if i >= 35:
+    if i >= 30:
         mylist8.append(i)
 a2rb = mylist8
 
 #Arm3
 mylist9 = []
 for i in a3lt:
-    if i >= 35:
+    if i >= 30:
         mylist9.append(i)
 a3lt = mylist9
 
 mylist10 = []
 for i in a3lb:
-    if i >= 35:
+    if i >= 30:
         mylist10.append(i)
 a3lb = mylist10
 
 mylist11 = []
 for i in a3rt:
-    if i >= 35:
+    if i >= 30:
         mylist11.append(i)
 a3rt = mylist11
 
 mylist12 = []
 for i in a3rb:
-    if i >= 35:
+    if i >= 30:
         mylist12.append(i)
 a3rb = mylist12
 
@@ -109,75 +109,75 @@ a3rb2 = df["A3RB2"]
 #Arm1
 mylist13 = []
 for i in a1lt2:
-    if i >= 35:
+    if i >= 30:
         mylist13.append(i)
 a1lt2 = mylist13
 
 mylist14 = []
 for i in a1lb2:
-    if i >= 35:
+    if i >= 30:
         mylist14.append(i)
 a1lb2 = mylist14
 
 mylist15 = []
 for i in a1rt2:
-    if i >= 35:
+    if i >= 30:
         mylist15.append(i)
 a1rt2 = mylist15
 
 mylist16 = []
 for i in a1rb2:
-    if i >= 35:
+    if i >= 30:
         mylist16.append(i)
 a1rb2 = mylist16
 
 #Arm2
 mylist17 = []
 for i in a2lt2:
-    if i >= 35:
+    if i >= 30:
         mylist17.append(i)
 a2lt2 = mylist17
 
 mylist18 = []
 for i in a2lb2:
-    if i >= 35:
+    if i >= 30:
         mylist18.append(i)
 a2lb2 = mylist18
 
 mylist19 = []
 for i in a2rt2:
-    if i >= 35:
+    if i >= 30:
         mylist19.append(i)
 a2rt2 = mylist19
 
 mylist20 = []
 for i in a2rb2:
-    if i >= 35:
+    if i >= 30:
         mylist20.append(i)
 a2rb2 = mylist20
 
 #Arm3
 mylist21 = []
 for i in a3lt2:
-    if i >= 35:
+    if i >= 30:
         mylist21.append(i)
 a3lt2 = mylist21
 
 mylist22 = []
 for i in a3lb2:
-    if i >= 35:
+    if i >= 30:
         mylist22.append(i)
 a3lb2 = mylist22
 
 mylist23 = []
 for i in a3rt2:
-    if i >= 35:
+    if i >= 30:
         mylist23.append(i)
 a3rt2 = mylist23
 
 mylist24 = []
 for i in a3rb2:
-    if i >= 35:
+    if i >= 30:
         mylist24.append(i)
 a3rb2 = mylist24
 
@@ -196,7 +196,7 @@ trial5b = df["A1LBt5"]
 #Thermocouple in the top of the moulds
 
 #Arm 1 Left Top
-#plt.figure(figsize=(20,10))
+plt.figure(figsize=(20,10))
 plt.plot(a1lt, color = "black", linewidth=1, label = "a1lt_production")
 plt.title("Balloon Length Failure Investigation")
 plt.suptitle("Temperature Profile - Top Thermocouple")
