@@ -31,6 +31,7 @@ a2rb2 = df["A2RB2"]
 a3rt2 = df["A3RT2"]
 a3rb2 = df["A3RB2"]
 
+#Side by Side plots
 #Thermocouple in the top of the moulds with production settings
 plt.subplot(1, 2, 1)
 plt.plot(a1lt, "violet", linewidth=1, label = "a1lt_production")
