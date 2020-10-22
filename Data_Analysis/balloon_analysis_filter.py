@@ -1,106 +1,106 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-file_name = str(input('Include File Name for Analysis (include extension) '))
+file_name = str(input('Include File Name for Analysis (include extension): '))
 df = pd.read_excel(file_name)
 
 #production settings
 a1lt = []
 for i in df["A1LT"]:
-    if i >= 30:
+    if i >= 10:
         a1lt.append(i)
 a1lb = []
 for i in df["A1LB"]:
-    if i >= 30:
+    if i >= 10:
         a1lb.append(i)
 a2lt = []
 for i in df["A2LT"]:
-    if i >= 30:
+    if i >= 10:
         a2lt.append(i)
 a2lb = []
 for i in df["A2LB"]:
-    if i >= 30:
+    if i >= 10:
         a2lb.append(i)
 a3lt = []
 for i in df["A3LT"]:
-    if i >= 30:
+    if i >= 10:
         a3lt.append(i)
 a3lb = []
 for i in df["A3LB"]:
-    if i >= 30:
+    if i >= 10:
         a3lb.append(i)
 a1rt = []
 for i in df["A1RT"]:
-    if i >= 30:
+    if i >= 10:
         a1rt.append(i)
 a1rb = []
 for i in df["A1RB"]:
-    if i >= 30:
+    if i >= 10:
         a1rb.append(i)
 a2rt = []
 for i in df["A2RT"]:
-    if i >= 30:
+    if i >= 10:
         a2rt.append(i)
 a2rb = []
 for i in df["A2RB"]:
-    if i >= 30:
+    if i >= 10:
         a2rb.append(i)
 a3rt = []
 for i in df["A3RT"]:
-    if i >= 30:
+    if i >= 10:
         a3rt.append(i)
 a3rb = []
 for i in df["A3RB"]:
-    if i >= 30:
+    if i >= 10:
         a3rb.append(i)
 
 #modified settings (arm position and loose tray)
 a1lt2 = []
 for i in df["A1LT2"]:
-    if i >= 30:
+    if i >= 10:
         a1lt2.append(i)
 a1lb2 = []
 for i in df["A1LB2"]:
-    if i >= 30:
+    if i >= 10:
         a1lb2.append(i)
 a2lt2 = []
 for i in df["A2LT2"]:
-    if i >= 30:
+    if i >= 10:
         a2lt2.append(i)
 a2lb2 = []
 for i in df["A2LB2"]:
-    if i >= 30:
+    if i >= 10:
         a2lb2.append(i)
 a3lt2 = []
 for i in df["A3LT2"]:
-    if i >= 30:
+    if i >= 10:
         a3lt2.append(i)
 a3lb2 = []
 for i in df["A3LB2"]:
-    if i >= 30:
+    if i >= 10:
         a3lb2.append(i)
 a1rt2 = []
 for i in df["A1RT2"]:
-    if i >= 30:
+    if i >= 10:
         a1rt2.append(i)
 a1rb2 = []
 for i in df["A1RB2"]:
-    if i >= 30:
+    if i >= 10:
         a1rb2.append(i)
 a2rt2 = []
 for i in df["A2RT2"]:
-    if i >= 30:
+    if i >= 10:
         a2rt2.append(i)
 a2rb2 = []
 for i in df["A2RB2"]:
-    if i >= 30:
+    if i >= 10:
         a2rb2.append(i)
 a3rt2 = []
 for i in df["A3RT2"]:
-    if i >= 30:
+    if i >= 10:
         a3rt2.append(i)
 a3rb2 = []
 for i in df["A3RB2"]:
-    if i >= 30:
+    if i >= 10:
         a3rb2.append(i)
 
 #Thermocouple in the top of the moulds
@@ -108,8 +108,8 @@ for i in df["A3RB2"]:
 plt.figure(figsize=(20,10))
 plt.plot(a1lt, color = "black", linewidth=1, label = "a1lt_production")
 axes = plt.gca()
-axes.set_xlim([0,120])
-axes.set_ylim([25,130])
+#axes.set_xlim([0,120])
+#axes.set_ylim([25,130])
 plt.text(45, 137, "Data Analysed from:", color='black', size=12)
 plt.text(60, 137, file_name, color='black', size=12)
 plt.title("Temperature Profile - Top Thermocouple - Production Settings")
@@ -121,8 +121,8 @@ manager = plt.get_current_fig_manager()
 manager.window.showMaximized()
 plt.savefig("1")
 plt.show(block=False)
-plt.pause(2)
-
+plt.pause(4)
+'''
 #Arm 1 Right Top
 #plt.figure(figsize=(20,10))
 plt.plot(a1rt, color = "blue", linewidth=1, label = "a1rt_production")
@@ -208,7 +208,7 @@ plt.savefig("6")
 plt.show(block=False)
 plt.pause(2)
 plt.close("all")
-
+'''
 #Thermocouple in the bottom of the mould
 #Arm 1 Left Bottom
 plt.figure(figsize=(20,10))
@@ -216,8 +216,8 @@ plt.plot(a1lb, color = "black", linewidth=1, label = "a1lb_production")
 plt.title("Temperature Profile - Bottom Thermocouple - Production Settings")
 plt.suptitle("Balloon Length Failure Investigation")
 axes = plt.gca()
-axes.set_xlim([0,120])
-axes.set_ylim([25,130])
+#axes.set_xlim([0,120])
+#axes.set_ylim([25,130])
 plt.text(60, 137, file_name, color='black', size=12)
 plt.text(45, 137, "Data Analysed from:", color='black', size=12)
 plt.legend(loc = "upper left")
@@ -227,8 +227,8 @@ manager = plt.get_current_fig_manager()
 manager.window.showMaximized()
 plt.savefig("12")
 plt.show(block=False)
-plt.pause(2)
-
+plt.pause(4)
+'''
 #Arm 1 Right Bottom
 #plt.figure(figsize=(20,10))
 plt.plot(a1rb, color = "blue", linewidth=1, label = "a1rb_production")
@@ -625,3 +625,4 @@ manager.window.showMaximized()
 plt.show(block=False)
 plt.pause(2)
 plt.close("all")
+'''
